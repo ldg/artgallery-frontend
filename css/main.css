@@ -1,4 +1,161 @@
+:root {
+  --clr-accent: #d5966c;
+  --clr-black: #151515;
+  --clr-gray: #444444;
+  --clr-white: #ffffff;
+  --ff-heading: "Big Shoulders Display", cursive;
+  --ff-body: "Outfit", sans-serif;
+  --fs-heading-xl: 6rem;
+  --fs-heading-l: 4.375rem;
+  --fs-heading-m: 3.75rem;
+  --fs-heading-s: 2.25rem;
+  --fs-heading-mobile:3.125rem;
+  --f-body-xs: 1rem/1.625rem "Outfit", sans-serif;
+  --f-body-s: 1.125rem/1.75rem "Outfit", sans-serif;
+  --f-body-m: 1.375rem/2rem "Outfit", sans-serif;
+  --f-button: 1.25rem/1.5rem "Big Shoulders Display", cursive;
+}
+
+/* CSS Reset - https://codepen.io/kevinpowell/pen/QWxBgZX */
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+html {
+  color-scheme: dark light;
+}
+
+/* min body height */
 body {
-  background: url("../img/desktop/image-map@2x.png") no-repeat lightgray;
-  background-size: cover;
+  min-height: 100vh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.body {
+  background-color: var(--clr-white);
+}
+
+h1, h2, h3 {
+  font-family: var(--ff-heading);
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--ff-body);
+}
+
+button.button {
+  position: relative;
+  font: var(--f-button);
+  text-transform: uppercase;
+  letter-spacing: 0.2272725rem;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  border: 0;
+  border-radius: 0;
+  padding-block: 1.5em;
+  -webkit-padding-start: 2em;
+          padding-inline-start: 2em;
+  -webkit-padding-end: 2.1875em;
+          padding-inline-end: 2.1875em;
+}
+
+button.button::after {
+  content: url(/img/icon-arrow-right.svg);
+  background-color: var(--clr-accent);
+  position: absolute;
+  top: 0;
+  right: -66px;
+  padding: 1.4em;
+}
+
+.hero h1 {
+  font-size: var(--fs-heading-m);
+  line-height: 3.4375rem;
+}
+.hero__img-mobile {
+  margin-bottom: 2em;
+}
+.hero__content {
+  padding-inline: 1em;
+}
+.hero__content p {
+  padding-block: 2em;
+}
+.hero__content button {
+  margin-bottom: 7.5em;
+}
+
+main.main {
+  padding-inline: 1em;
+}
+main.main img:first-child {
+  margin-bottom: 1.5625em;
+}
+main.main img {
+  margin-bottom: 1em;
+}
+main.main h2 {
+  font-size: var(--fs-heading-mobile);
+  line-height: 2.8125rem;
+  margin-bottom: 1.3125rem;
+}
+main.main p {
+  margin-bottom: 2rem;
+}
+main.main .main__background-dark {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  padding-inline: 1.5em;
+  padding-block: 2.9375em;
+  margin-bottom: 7.5em;
+}
+main.main .main__background-dark p {
+  font: var(--f-body-m);
+}
+
+footer.footer {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  padding-inline: 1em;
+  padding-top: 3em;
+}
+footer.footer h2 {
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+  margin-bottom: 2.375em;
+}
+footer.footer p {
+  font: var(--f-body-xs);
+  margin-bottom: 2.37em;
+}
+footer.footer .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer.footer .footer__social a {
+  margin-right: 1.25em;
+  margin-bottom: 3em;
 }
