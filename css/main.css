@@ -14,6 +14,9 @@
   --f-body-s: 1.125rem/1.75rem "Outfit", sans-serif;
   --f-body-m: 1.375rem/2rem "Outfit", sans-serif;
   --f-button: 1.25rem/1.5rem "Big Shoulders Display", cursive;
+  --bp-phone: 23.4375em;
+  --bp-tablet: 48em;
+  --bp-desktop: 90em;
 }
 
 /* CSS Reset - https://codepen.io/kevinpowell/pen/QWxBgZX */
@@ -90,72 +93,119 @@ button.button::after {
   padding: 1.4em;
 }
 
-.hero h1 {
-  font-size: var(--fs-heading-m);
-  line-height: 3.4375rem;
-}
-.hero__img-mobile {
-  margin-bottom: 2em;
-}
-.hero__content {
-  padding-inline: 1em;
-}
-.hero__content p {
-  padding-block: 2em;
-}
-.hero__content button {
-  margin-bottom: 7.5em;
-}
-
-main.main {
-  padding-inline: 1em;
-}
-main.main img:first-child {
-  margin-bottom: 1.5625em;
-}
-main.main img {
-  margin-bottom: 1em;
-}
-main.main h2 {
-  font-size: var(--fs-heading-mobile);
-  line-height: 2.8125rem;
-  margin-bottom: 1.3125rem;
-}
-main.main p {
-  margin-bottom: 2rem;
-}
-main.main .main__background-dark {
-  background-color: var(--clr-black);
-  color: var(--clr-white);
-  padding-inline: 1.5em;
-  padding-block: 2.9375em;
-  margin-bottom: 7.5em;
-}
-main.main .main__background-dark p {
-  font: var(--f-body-m);
-}
-
-footer.footer {
-  background-color: var(--clr-black);
-  color: var(--clr-white);
-  padding-inline: 1em;
-  padding-top: 3em;
-}
-footer.footer h2 {
-  font-size: 1.6rem;
-  line-height: 1.5rem;
-  margin-bottom: 2.375em;
-}
-footer.footer p {
-  font: var(--f-body-xs);
-  margin-bottom: 2.37em;
-}
-footer.footer .footer__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-footer.footer .footer__social a {
-  margin-right: 1.25em;
-  margin-bottom: 3em;
+@media (max-width: 37.49875em) {
+  .hero h1 {
+    font-size: var(--fs-heading-m);
+    line-height: 3.4375rem;
+  }
+  .hero__img-mobile {
+    margin-bottom: 2em;
+  }
+  .hero__content {
+    padding-inline: 1em;
+  }
+  .hero__content p {
+    padding-block: 2em;
+  }
+  .hero__content button {
+    margin-bottom: 7.5em;
+  }
+  main.main {
+    padding-inline: 1em;
+  }
+  main.main img:first-child {
+    margin-bottom: 1.5625em;
+  }
+  main.main img {
+    margin-bottom: 1em;
+  }
+  main.main h2 {
+    font-size: var(--fs-heading-mobile);
+    line-height: 2.8125rem;
+    margin-bottom: 1.3125rem;
+  }
+  main.main p {
+    margin-bottom: 2rem;
+  }
+  main.main .main__background-dark {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    padding-inline: 1.5em;
+    padding-block: 2.9375em;
+    margin-bottom: 7.5em;
+  }
+  main.main .main__background-dark p {
+    font: var(--f-body-m);
+  }
+  main.location {
+    padding: 0;
+  }
+  main.location .hero {
+    width: 100%;
+    height: 34.375em;
+    background: url("../img/mobile/image-map@2x.png") no-repeat top left;
+    background-size: cover;
+  }
+  main.location .main__background-dark {
+    margin: 0;
+  }
+  main.location .main__background-dark h1 {
+    font-size: var(--fs-heading-mobile);
+    margin-bottom: 3rem;
+  }
+  main.location .main__background-dark p {
+    font: var(--f-body-m);
+  }
+  main.location .main__background-dark p span {
+    font-family: var(--ff-heading);
+    font-size: 2rem;
+    line-height: 2rem;
+    color: var(--clr-accent);
+    display: block;
+  }
+  footer.footer {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    padding-inline: 1em;
+    padding-top: 3em;
+  }
+  footer.footer h2 {
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.375em;
+  }
+  footer.footer p {
+    font: var(--f-body-xs);
+    margin-bottom: 2.37em;
+  }
+  footer.footer .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer.footer .footer__social a {
+    margin-right: 1.25em;
+    margin-bottom: 3em;
+  }
+  footer.section__accent {
+    background-color: var(--clr-accent);
+    padding: 3em 2em;
+  }
+  footer.section__accent h2 {
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.375em;
+  }
+  footer.section__accent p {
+    margin-bottom: 2.375em;
+  }
+  footer.section__accent .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer.section__accent .footer__social a {
+    margin-right: 1.25em;
+    margin-bottom: 3em;
+  }
 }

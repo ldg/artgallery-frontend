@@ -1,0 +1,31 @@
+.body{
+    background-color: var(--clr-white);
+}
+h1,h2,h3 {
+    font-family: var(--ff-heading);
+    text-transform: uppercase;
+}
+p {
+    font-family: var(--ff-body);
+}
+button.button {
+    position: relative;
+    font: var(--f-button);
+    text-transform: uppercase;
+    letter-spacing: 0.2272725rem; //3.63636px
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    border: 0;
+    border-radius: 0;
+    padding-block: 1.5em;
+    padding-inline-start: 2em;
+    padding-inline-end: 2.1875em;
+}
+button.button::after{
+    content: url(/img/icon-arrow-right.svg);
+    background-color: var(--clr-accent);
+    position: absolute;
+    top: 0;
+    right: -66px;
+    padding: 1.4em;
+}
