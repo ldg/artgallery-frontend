@@ -12,9 +12,11 @@
   --fs-heading-mobile:3.125rem;
   --f-heading-l: 900 4.375rem/4.0625rem "Big Shoulders Display", cursive;
   --f-heading-mobile: 900 3.125rem/2.8125rem "Big Shoulders Display", cursive;
+  --f-heading-section: 900 3.4375rem/3.125rem "Big Shoulders Display", cursive;
   --f-body-xs: 300 1rem/1.625rem "Outfit", sans-serif;
   --f-body-s: 300 1.125rem/1.75rem "Outfit", sans-serif;
   --f-body-m: 300 1.375rem/2rem "Outfit", sans-serif;
+  --f-footer-heading: 900 1.625rem/1.375rem "Big Shoulders Display", cursive;
   --f-button: 1.25rem/1.5rem "Big Shoulders Display", cursive;
 }
 
@@ -92,7 +94,8 @@ button.button::after {
   padding: 1.4em;
 }
 
-.main__background-dark {
+.main__background-dark,
+.main__section-black {
   background-color: var(--clr-black);
   color: var(--clr-white);
 }
@@ -214,7 +217,6 @@ footer.footer {
     margin-bottom: 3em;
   }
   footer.section__accent {
-    background-color: var(--clr-accent);
     padding: 3em 2em;
   }
   footer.section__accent h2 {
@@ -314,23 +316,69 @@ footer.footer {
   main.main .main__background-dark p {
     font: var(--f-body-s);
   }
-  footer.footer {
+  .hero.location {
+    width: 100%;
+    height: 37.5em;
+    background: url("../img/tablet/image-map@2x.png") no-repeat center center;
+    background-size: cover;
+    margin-bottom: 0;
+  }
+  main.location {
+    display: block;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  main.location .main__section-black {
+    display: grid;
+    grid-template-columns: 13.9375em auto;
+    gap: 1.25em;
+    padding-top: 5.5em;
+    padding-inline: 2.5em;
+    padding-bottom: 5em;
+  }
+  main.location .main__section-black h1 {
+    font: var(--f-heading-section);
+  }
+  main.location .main__section-black p {
+    grid-column: 2/-1;
+    margin-left: 4.25em;
+    width: auto;
+  }
+  main.location .main__section-black p span {
+    font-family: var(--ff-heading);
+    font-size: 2rem;
+    line-height: 2rem;
+    color: var(--clr-accent);
+    display: block;
+  }
+  footer.footer,
+  footer.section__accent {
     display: grid;
     grid-template-columns: 7.8125em auto 7.8125em;
-    padding-inline: 40px;
-    padding-block: 56px;
+    padding-inline: 2.5em;
+    padding-block: 3.5em;
   }
-  footer.footer p {
+  footer.footer h2,
+  footer.section__accent h2 {
+    font: var(--f-footer-heading);
+  }
+  footer.footer p,
+  footer.section__accent p {
     max-width: 70%;
     margin: auto;
     font: var(--f-body-xs);
   }
-  footer.footer .footer__social {
+  footer.footer .footer__social,
+  footer.section__accent .footer__social {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  footer.footer .footer__social a {
+  footer.footer .footer__social a,
+  footer.section__accent .footer__social a {
     margin-right: 1.25em;
+  }
+  footer.section__accent {
+    background-color: var(--clr-accent);
   }
 }

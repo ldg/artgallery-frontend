@@ -29,7 +29,8 @@ button.button::after{
     right: -66px;
     padding: 1.4em;
 }
-.main__background-dark {
+.main__background-dark,
+.main__section-black {
     background-color: var(--clr-black);
     color: var(--clr-white);
 }

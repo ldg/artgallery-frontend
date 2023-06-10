@@ -8,33 +8,38 @@
   
   <title>Frontend Mentor | Art gallery website</title>
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- preload styles via https://css-tricks.com/how-to-load-fonts-in-a-way-that-fights-fout-and-makes-lighthouse-happy/ -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap">
+  <!-- prevent FOUT - browsers give low priority to print stylsheets. onload() changes media to "all" after stylesheet is loaded -->
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <!-- fallback if js is disabled -->
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap">
+  </noscript>
     <!-- main css -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div class="hero location">
+    <a href="index.html"><button class="button">Back to Home</button></a>
+  </div>
 <main class="main location">
-  
-    <div class="hero">
-      <a href="index.html"><button class="button">Back to Home</button></a>
-    </div>
-  
-    <div class="main__background-dark">
-      <h1>Our location</h1>
-      <p>
-        <span>99 King Street</span><br>
-        Newport<br>
-        RI 02840<br>
-        United States of America
-      </p>
-      <p>
-        Our newly opened gallery is located near the Edward King House on 99 King
-        Street, the Modern Art Gallery is free to all visitors and open seven days
-        a week from 8am to 9pm.
-      </p>
-    </div>
+  <div class="main__section-black">
+    <h1>Our location</h1>
+    <p>
+      <span>99 King Street</span><br>
+      Newport<br>
+      RI 02840<br>
+      United States of America
+    </p>
+    <p>
+      Our newly opened gallery is located near the Edward King House on 99 King
+      Street, the Modern Art Gallery is free to all visitors and open seven days
+      a week from 8am to 9pm.
+    </p>
+  </div>
 </main>
 
 <footer class="section__accent">
