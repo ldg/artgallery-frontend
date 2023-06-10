@@ -22,7 +22,7 @@ button.button {
     padding-inline-end: 2.1875em;
 }
 button.button::after{
-    content: url(/img/icon-arrow-right.svg);
+    content: url(../img/icon-arrow-right.svg);
     background-color: var(--clr-accent);
     position: absolute;
     top: 0;
