@@ -29,3 +29,12 @@ button.button::after{
     right: -66px;
     padding: 1.4em;
 }
+.main__background-dark {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+
+footer.footer {
+        background-color: var(--clr-black);
+        color: var(--clr-white);
+}
