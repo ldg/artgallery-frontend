@@ -510,6 +510,16 @@ a svg:hover {
     font: var(--f-body-m);
     width: 21.875rem;
   }
+  main.main #grid-img-2 {
+    background: url("../img/desktop/image-grid-2@2x.jpg") no-repeat top left;
+    background-size: cover;
+    width: 100%;
+    height: 720px;
+  }
+  main.main #grid-img-3 {
+    background: url("../img/desktop/image-grid-3@2x.jpg") no-repeat top right;
+    background-size: cover;
+  }
   main.main .main__background-dark {
     height: 23.5625em;
   }
