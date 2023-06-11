@@ -18,16 +18,61 @@ button.button {
     border: 0;
     border-radius: 0;
     padding-block: 1.5em;
-    padding-inline-start: 2em;
-    padding-inline-end: 2.1875em;
 }
-button.button::after{
+
+button#to-location {
+    padding-inline: 2em;
+    padding-inline-end: 5em;
+        &#to-location:hover {
+            background-color: var(--clr-accent);
+            transition: all .4s;
+            transition-timing-function: ease-in-out;
+        }
+        &#to-location:hover:after {
+            background-color: var(--clr-black);
+            transition: all .4s;
+            transition-timing-function: ease-in-out;
+        }
+}
+
+button#to-home {
+    padding-inline: 2em;
+    padding-inline-start: 5em;
+        &#to-home:hover {
+            background-color: var(--clr-accent);
+            transition: all .4s;
+            transition-timing-function: ease-in-out;
+        }
+        &#to-home:hover:before {
+            background-color: var(--clr-black);
+            transition: all .4s;
+            transition-timing-function:ease-in-out;
+        }
+}
+#to-location::after{
     content: url(../img/icon-arrow-right.svg);
     background-color: var(--clr-accent);
     position: absolute;
     top: 0;
-    right: -66px;
+    right: 0;
     padding: 1.4em;
+}
+#to-home::before{
+    content: url(../img/icon-arrow-left.svg);
+    background-color: var(--clr-accent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1.4em;
+}
+a > button.button {
+    cursor: pointer;
+}
+.hero.location {
+    a {
+        width: fit-content;
+        height: fit-content;
+    }
 }
 .main__background-dark,
 .main__section-black {
@@ -36,6 +81,17 @@ button.button::after{
 }
 
 footer.footer {
-        background-color: var(--clr-black);
-        color: var(--clr-white);
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+        .footer__logo-dark,
+        .footer__logo-light {
+            width: 10em;
+            height: auto;
+        }
+}
+
+a svg:hover {
+    filter: opacity(40%);
+    transition: all .4s;
+    transition-timing-function: ease-in-out;
 }

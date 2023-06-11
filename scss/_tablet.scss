@@ -16,6 +16,11 @@
             p {
                 font: var(--f-body-s);
                 margin-bottom: 1.8em;
+                max-width: 21.1875em;
+                padding-right: 2em;
+            }
+            .hero__content {
+                grid-column: 2/3;
             }
     }
 
@@ -82,6 +87,11 @@
         background: url('../img/tablet/image-map@2x.png') no-repeat center center;
         background-size: cover;
         margin-bottom: 0;
+            a {
+                button.button {
+                    height: auto;
+                }
+            }
     }
     main.location {
         display: block;
