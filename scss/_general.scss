@@ -90,6 +90,10 @@ footer.footer {
         }
 }
 
+footer.section__accent { //location.html
+    background-color: var(--clr-accent); 
+}
+
 a svg:hover {
     filter: opacity(40%);
     transition: all .4s;

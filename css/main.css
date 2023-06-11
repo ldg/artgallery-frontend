@@ -169,6 +169,10 @@ footer.footer .footer__logo-light {
   height: auto;
 }
 
+footer.section__accent {
+  background-color: var(--clr-accent);
+}
+
 a svg:hover {
   -webkit-filter: opacity(40%);
           filter: opacity(40%);
@@ -462,9 +466,6 @@ a svg:hover {
   footer.footer .footer__social a,
   footer.section__accent .footer__social a {
     margin-right: 1.25em;
-  }
-  footer.section__accent {
-    background-color: var(--clr-accent);
   }
 }
 @media (min-width: 90em) {
