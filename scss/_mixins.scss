@@ -1,0 +1,9 @@
+//use to @include retina options to background images
+@mixin image-2x($image) {
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    // background-size: $width $height;
+  }
+}
