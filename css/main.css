@@ -10,6 +10,7 @@
   --fs-heading-m: 3.75rem;
   --fs-heading-s: 2.25rem;
   --fs-heading-mobile:3.125rem;
+  --f-heading-xl: 900 6rem/5.5rem "Big Shoulders Display", cursive;
   --f-heading-l: 900 4.375rem/4.0625rem "Big Shoulders Display", cursive;
   --f-heading-m: 900 3.75rem/3.75rem "Big Shoulders Display", cursive;
   --f-heading-mobile: 900 3.125rem/2.8125rem "Big Shoulders Display", cursive;
@@ -533,13 +534,20 @@ a svg:hover {
   }
   .hero .hero__content {
     grid-column: 3/4;
-    margin-left: -4.6em;
+    margin-left: -3.2em;
   }
   .hero .hero__content h1 {
-    margin-left: -9.6em;
+    font: var(--f-heading-xl);
+    margin-top: -0.2em;
+    margin-left: -8.1em;
     -webkit-filter: invert(1);
             filter: invert(1);
     mix-blend-mode: difference;
+  }
+  .hero .hero__content p {
+    margin-top: -13.3em;
+    margin-bottom: 7em;
+    width: 18.325em;
   }
   main.main {
     padding-inline: 10.3125em;
