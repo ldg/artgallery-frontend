@@ -18,3 +18,6 @@
 # readme template file and vscode json
 .vscode
 README-template.md
+
+# unused SASS partials
+_mixins.scss

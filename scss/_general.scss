@@ -38,6 +38,7 @@ button#to-location {
 button#to-home {
     padding-inline: 2em;
     padding-inline-start: 5em;
+    z-index: 99999;
         &#to-home:hover {
             background-color: var(--clr-accent);
             transition: all .4s;

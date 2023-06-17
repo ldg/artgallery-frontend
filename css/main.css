@@ -106,6 +106,7 @@ button#to-home {
   padding-inline: 2em;
   -webkit-padding-start: 5em;
           padding-inline-start: 5em;
+  z-index: 99999;
 }
 button#to-home#to-home:hover {
   background-color: var(--clr-accent);
