@@ -8,7 +8,7 @@ h1,h2,h3 {
 p {
     font-family: var(--ff-body);
 }
-button.button {
+a.button {
     position: relative;
     font: var(--f-button);
     text-transform: uppercase;
@@ -20,7 +20,7 @@ button.button {
     padding-block: 1.5em;
 }
 
-button#to-location {
+a#to-location {
     padding-inline: 2em;
     padding-inline-end: 5em;
         &#to-location:hover {
@@ -35,7 +35,7 @@ button#to-location {
         }
 }
 
-button#to-home {
+a#to-home {
     padding-inline: 2em;
     padding-inline-start: 5em;
     z-index: 99999;
@@ -66,8 +66,9 @@ button#to-home {
     left: 0;
     padding: 1.4em;
 }
-a > button.button {
+a {
     cursor: pointer;
+    text-decoration: none;
 }
 .hero.location {
     a {
