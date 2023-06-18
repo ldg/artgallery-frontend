@@ -581,6 +581,10 @@ a svg:hover {
   main.main .main__background-dark {
     height: 23.5625em;
   }
+  main.main .main__background-dark h2 {
+    font: var(--f-heading-m);
+    padding-top: 0;
+  }
   footer.footer,
   footer.section__accent {
     grid-template-columns: 10em auto 7.8125em;
