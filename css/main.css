@@ -581,6 +581,11 @@ a svg:hover {
   main.main .main__background-dark {
     height: 23.5625em;
   }
+  footer.footer,
+  footer.section__accent {
+    grid-template-columns: 10em auto 7.8125em;
+    padding-block: 5em;
+  }
   footer.footer .footer__logo-light,
   footer.footer .footer__logo-dark,
   footer.section__accent .footer__logo-light,
@@ -598,6 +603,7 @@ a svg:hover {
   }
   .main.location {
     padding: 0;
+    margin-bottom: 0;
   }
   .main.location .main__section-black {
     padding-top: 6.5em;

@@ -66,13 +66,15 @@
     }
     footer.footer,
     footer.section__accent {
-        .footer__logo-light,
-        .footer__logo-dark {
-            margin-left: 7.6em;
-        }
-        p {
-            max-width: 35%;
-        }
+        grid-template-columns: 10em auto 7.8125em;
+        padding-block: 5em;
+            .footer__logo-light,
+            .footer__logo-dark {
+                margin-left: 7.6em;
+            }
+            p {
+                max-width: 35%;
+            }
     }
 
     //loction.html
@@ -83,6 +85,7 @@
     }
     .main.location {
         padding: 0;
+        margin-bottom: 0;
             .main__section-black {
                 padding-top: 6.5em;
                 padding-inline: 10.3125em;
