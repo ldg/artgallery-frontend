@@ -35,7 +35,8 @@
     }
     main.main {
         padding-inline: 10.3125em; // 165px
-        padding-block: 11.25em; //180px
+        padding-top: 10em; //160px
+        margin-bottom: 10em; //160px
         gap: 1.875em;
             .main__content {
                 background: url('../img/desktop/image-grid-1.jpg') no-repeat top right;
