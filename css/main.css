@@ -252,6 +252,10 @@ a svg:hover {
     height: 34.375em;
     background: url("../img/mobile/image-map.png") no-repeat top left;
     background-size: cover;
+    background-position: center;
+  }
+  .hero.location a#to-home {
+    position: absolute;
   }
   main.location {
     padding: 0;
@@ -330,7 +334,8 @@ a svg:hover {
   }
   .hero.location {
     background: url("../img/mobile/image-map@2x.png") no-repeat top left;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
   }
   .main.main .main__img-mobile {
     background: url("../img/mobile/image-grid-1@2x.jpg") no-repeat top right;
@@ -376,6 +381,8 @@ a svg:hover {
     gap: 0.6875em;
     padding-inline: 2.5em;
     margin-bottom: 7.5em;
+    max-width: 770px;
+    margin-inline: auto;
   }
   main.main .main__content {
     width: 100%;
@@ -433,6 +440,7 @@ a svg:hover {
     height: 37.5em;
     background: url("../img/tablet/image-map.png") no-repeat center center;
     background-size: cover;
+    background-position: center;
     margin-bottom: 0;
   }
   .hero.location a button.button {
@@ -521,6 +529,8 @@ a svg:hover {
   .hero {
     background: url("");
     grid-template-columns: repeat(3, 1fr);
+    max-width: 1440px;
+    margin-inline: auto;
   }
   .hero .hero__img-mobile {
     background-color: var(--clr-black);
@@ -555,6 +565,7 @@ a svg:hover {
     padding-top: 10em;
     margin-bottom: 11em;
     gap: 1.875em;
+    max-width: 1440px;
   }
   main.main .main__content {
     background: url("../img/desktop/image-grid-1.jpg") no-repeat top right;
@@ -629,8 +640,8 @@ a svg:hover {
     background-size: contain;
   }
   .hero.location {
-    background: url("../img/desktop/image-map@2x.png") no-repeat top left;
-    background-size: contain;
+    background: url("../img/desktop/image-map@2x.png") no-repeat center;
+    background-size: cover;
   }
   .main.main .main__content {
     background: url("../img/desktop/image-grid-1@2x.jpg") no-repeat top right;

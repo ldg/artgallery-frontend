@@ -70,6 +70,10 @@
         height: 34.375em; //550px
         background: url('../img/mobile/image-map.png') no-repeat top left;
         background-size: cover;
+        background-position: center;
+        a#to-home{
+            position: absolute;
+        }
     }
     main.location {
         padding: 0;
@@ -152,7 +156,8 @@
         }
         .hero.location {
             background: url('../img/mobile/image-map@2x.png') no-repeat top left;
-            background-size: contain;
+            background-size: cover;
+            background-position: center;
         }
         .main.main .main__img-mobile {
             background: url('../img/mobile/image-grid-1@2x.jpg') no-repeat top right;
