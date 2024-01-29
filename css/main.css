@@ -450,6 +450,7 @@ a svg:hover {
     display: block;
     padding: 0;
     margin-bottom: 0;
+    max-width: 100%;
   }
   main.location .main__section-black {
     display: grid;
@@ -509,8 +510,8 @@ a svg:hover {
     background-size: contain;
   }
   .hero.location {
-    background: url("../img/tablet/image-map@2x.png") no-repeat top left;
-    background-size: contain;
+    background: url("../img/tablet/image-map@2x.png") no-repeat center;
+    background-size: cover;
   }
   .main.main .main__content {
     background: url("../img/tablet/image-grid-1@2x.jpg") no-repeat top right;
